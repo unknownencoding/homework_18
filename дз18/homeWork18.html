@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+
+    <!--  -->
+    <!-- <script>
+      function func1() {
+        const num1 = parseFloat(document.getElementById('first').value)
+        const num2 = parseFloat(document.getElementById('second').value)
+        const sum = num1 + num2
+        document.getElementById('result').value = sum
+      }
+      window.onload = function () {
+        document.getElementsByTagName('button')[0].onclick = func1
+      }
+    </script>
+  </head>
+  <body>
+    <label>
+      First number
+      <input
+        id="first"
+        type="number"
+        placeholder="Type first number here"
+        value="0"
+      />
+    </label>
+    <label>
+      Second number
+      <input
+        id="second"
+        type="number"
+        placeholder="Type second number here"
+        value="0"
+      />
+    </label>
+    <div id="container">
+      <button>Go</button>
+    </div>
+    <label>
+      Sum
+      <input id="result" type="number" placeholder="Result" />
+    </label> -->
+    <!--
+     -->
+     <!-- <script>
+      function func1() {
+        const num1 = parseFloat(document.getElementById('first').value)
+        const num2 = parseFloat(document.getElementById('second').value)
+        const sum = num1 + num2
+        document.getElementById('result').value = sum
+      }
+    </script>
+  </head>
+  <body>
+    <label>
+      First number
+      <input
+        id="first"
+        type="number"
+        placeholder="Type first number here"
+        value="0"
+      />
+    </label>
+    <label>
+      Second number
+      <input
+        id="second"
+        type="number"
+        placeholder="Type second number here"
+        value="0"
+      />
+    </label>
+    <div id="container">
+      <button onclick="func1()">Go</button>
+    </div>
+    <label>
+      Sum
+      <input id="result" type="number" placeholder="Result" />
+    </label> -->
+
+<!-- ==>>>>Задача 1. Розробити калькулятор<<<== -->
+<!-- 
+
+
+<script> 
+  function summ() {
+    const num1 = parseFloat(document.getElementById('first').value)
+    const num2 = parseFloat(document.getElementById('second').value)
+    const sum = num1 + num2
+    document.getElementById('result').textContent = sum
+  }
+
+  function multiply() {
+    const num1 = parseFloat(document.getElementById('first').value)
+    const num2 = parseFloat(document.getElementById('second').value)
+    const mult = num1 * num2
+    document.getElementById('result').textContent = mult
+  }
+
+  function divide() {
+    const num1 = parseFloat(document.getElementById('first').value)
+    const num2 = parseFloat(document.getElementById('second').value)
+    const divide = num1/num2
+    document.getElementById('result').textContent = divide
+  }
+
+  function minus() {
+    const num1 = parseFloat(document.getElementById('first').value)
+    const num2 = parseFloat(document.getElementById('second').value)
+    const minus = num1 - num2
+    document.getElementById('result').textContent = minus
+  }
+
+  window.onload = function () {
+    document.getElementById('Summ').onclick = summ
+    document.getElementById('Multiply').onclick = multiply
+    document.getElementById('Divide').onclick = divide
+    document.getElementById('Minus').onclick = minus
+  }
+</script>
+
+<label>
+  First number
+  <input id="first" type="number" placeholder="Type first number here" value="0" />
+</label>
+<label>
+  Second number
+  <input id="second" type="number" placeholder="Type second number here" value="0" />
+</label>
+
+<div id="container">
+  <button id="Summ">Summ</button>
+  <button id="Multiply">Multiply</button>
+  <button id="Divide">Divide</button>
+  <button id="Minus">Minus</button>
+</div>
+
+<div>
+  Result= <span id="result"></span><br> 
+</div>
+ -->
+ <!-- ==>>>>Задача 2. Зробити конвертер валют (курси валют – константи у скрипті)<<<==  -->
+<!-- <div style="background-image:url(./97721563-991df66c85b1521621d9420bbba3752d.webp); width: 800px; height: 100px; padding: 20px;">
+    <label>
+        кількість грн
+        <input type="number" id="uah" value="0">
+    </label>
+    <label>
+        кількість $
+        <input type="number" id="usd" value="0">
+    </label>
+    <div style="display: flex;">
+        <button id="changeUSDtoUAH">Convert USD to UAH</button>
+    </div>
+    <button id="convertBoth">Convert UAH to USD and EUR</button>
+
+    <div>
+        кількість $ = <span id="res" style="margin-right: 350px;"></span><br>
+        кількість Є = <span id="resEUR" style="margin-right: 350px;"></span><br>
+        кількість грн = <span id="resUAH"></span>
+    </div>
+    <script>
+        const courseDollar = 27;
+        const courseEuro = 30;
+        function convert() {
+            const uah = parseFloat(document.getElementById('uah').value);
+            const dollarValue = uah / courseDollar;
+            document.getElementById('res').innerHTML = dollarValue;
+        }
+        function ConvertUSD_to_UAH() {
+            const usd = parseFloat(document.getElementById('usd').value);
+            const uahValue = usd * courseDollar;
+            document.getElementById('resUAH').innerHTML = uahValue;
+        }
+        function convertUAHtoEUR() {
+            const uah = parseFloat(document.getElementById('uah').value);
+            const euroValue = uah / courseEuro;
+            document.getElementById('resEUR').innerHTML = euroValue;
+        }
+           function convertBoth() {
+        convert();
+        convertUAHtoEUR();
+    }
+
+    window.onload = function() {
+        document.getElementById('convertBoth').onclick = convertBoth;
+                   document.getElementById('changeUSDtoUAH').onclick = ConvertUSD_to_UAH;
+
+    };
+    </script>
+</div> -->
+
+
+<!-- Задача 3. Користувач задає рік народження. Визначити кількість років користувача. -->
+<!-- 
+<label>
+  Введіть рік народження:
+  <input type="number" id="birthYear" value="0">
+</label>
+<button id="calcYear">Розрахувати вік</button>
+<div>
+  Ваш вік становить: <span id="res"></span>
+</div>
+
+
+<script>
+  function getCurrentYear() {
+    const today = new Date();
+    const year = today.getFullYear();
+    return year;
+  }
+
+  const currentYear = getCurrentYear();
+
+  function getYearOld() {
+    const birthYear = parseInt(document.getElementById('birthYear').value);    
+    const yearOld = currentYear - birthYear;
+    const ageResult = document.getElementById('res');
+    ageResult.textContent = yearOld;
+  }
+
+  const calculateButton = document.getElementById('calcYear');
+  calculateButton.addEventListener('click', getYearOld);
+</script> -->
+
+
+<!-- Задача 4. Наперед задано у скрипті масив зі списком бажань. Після завантаження сторінки випадковим чином
+     вибираються 3 і відображаються у окремих div (їх треба створити і додати на сторінку)
+ -->
+ <!-- <script>
+      document.addEventListener("DOMContentLoaded", function() {
+
+const wishlist = ['вивчити js', 'вивчити react','сходити в лазню','виспатись', 'Футболка','Кружка','дайвінг'];
+
+// Выбираем три случайных элемента из массива
+const randomItems = wishlist.sort(() => Math.random() - 0.5).slice(0, 3);
+
+// Создаем три div элемента и добавляем в них выбранные элементы
+randomItems.forEach(item => {
+  const div = document.createElement('div');
+  div.innerText = item;
+  document.body.appendChild(div);
+});
+
+});
+    </script> -->
+
+    <!-- Задача 5. Відобразити таблицю 3*4 з випадковими числами (її треба динамічно створити і вставити на сторінку)
+ -->
+<!-- 
+<script>
+class Table3x4 {
+   constructor(rowsCount,columnsCount,minVal,maxVal){
+    this.rowsCount = rowsCount
+    this.columnsCount = columnsCount 
+    this.minVal=minVal
+    this.maxVal=maxVal
+    this.dataArray = this.getRandomArray()
+   }
+  //формування рандомнго числа
+  getRandomNumber(){
+  return this.minVal+Math.floor(Math.random() *(this.maxVal-this.minVal+ 1)); 
+// return Math.floor(Math.random() * (this.maxVal - this.minVal + 1)) + this.minVal;
+// return Math.floor(Math.random() * 100) + 1;
+}
+//форсування 2-во вимірного масиву
+   getRandomArray(){
+    const arr=[]
+ for (let r = 0; r < this.rowsCount; r++) {
+  let row=[]
+  for (let c = 0; c < this.columnsCount; c++) {
+    row.push(this.getRandomNumber())
+  }
+  arr.push(row)
+ }
+ return arr
+   }
+get maxNum(){
+  return Math.max(...this.dataArray.flat())
+}
+
+get minNum(){
+  return Math.min(...this.dataArray.flat())
+
+  }
+    render(containerId){
+       const table = document.createElement('table')
+       for (const row of this.dataArray) {
+        const tr = document.createElement('tr')
+            for (const el of row ) {
+              const td= document.createElement('td')
+              td.innerText=el
+              tr.append(td)
+            }
+
+        table.append(tr)
+       }
+       const containerElement = document.getElementById(containerId)
+       containerElement.append(table); 
+    }
+
+} 
+window.onload = function() {// онлоад-код запуститься після завантаження сторінки
+  const  t1 = new Table3x4(3,4,1,10)
+t1.render("table-container")
+
+}
+
+
+</script> -->
+
+
+<!-- Задача 6. 
+  Користувач задає кількість оцінок і натискає на кнопку «get table». 
+  В результаті формується таблиця з input, куди користувач вводить оцінки. 
+  Після цього натискає на кнопку “get sum” і знаходить середнє значення.
+ -->
+
+ <!-- <label>
+  введіть кількість предметів
+  <input id="quantity-score" type="number">
+</label>
+<button id="get-table">get table</button>
+<button id="get-sum">get sum</button>
+<label>
+  середнє значення = <span></span>
+</label>
+<div id="table-container"></div>
+<script>
+  class Timesheet {
+    constructor(rowsCount, columnsCount = 1, minVal = 1, maxVal) {
+      this.rowsCount = rowsCount;
+      this.columnsCount = columnsCount;
+      this.minVal = minVal;
+      this.maxVal = maxVal;
+    }
+    get quantityScore() {
+      let quantityInput = document.getElementById("quantity-score");
+      let quantityValue = parseInt(quantityInput.value);
+      return quantityValue;
+    }
+
+    table() {
+      const tableContainer = document.getElementById("table-container");
+      //- получает элемент HTML с уникальным идентификатором "table-container" и присваивает его переменной tableContainer.
+      const quantityValue = this.quantityScore;
+      // получает значение количества строк для создания таблицы из метода quantityScore, который возвращает количество предметов, введенных пользователем в соответствующее поле ввода.
+      const table = document.createElement("table");
+      //создает элемент таблицы table.
+      for (let t = 0; t < quantityValue; t++) {
+        //итерируется от 0 до quantityValue и создает строку таблицы для каждой итерации.
+        const row = document.createElement("tr");
+        //создает новую строку таблицы tr и присваивает ее переменной row.
+        const inputCell = document.createElement("td");
+        //  создает новую ячейку td и присваивает ее переменной inputCell.
+        const input = document.createElement("input");
+        //создает элемент ввода input и присваивает его переменной input.
+        input.type = "number";
+        // устанавливает тип вводимого значения в числовой number.
+        input.min = this.minVal;
+        // устанавливает минимальное значение, которое можно ввести в элемент ввода, в значение, указанное в свойстве minVal объекта timesheet.
+        input.max = this.maxVal;
+        //  устанавливает максимальное значение, которое можно ввести в элемент ввода, в значение, указанное в свойстве maxVal объекта timesheet.
+        inputCell.appendChild(input);
+        //  добавляет элемент ввода в ячейку inputCell.
+        row.appendChild(inputCell);
+        // добавляет ячейку inputCell в строку row.
+        table.appendChild(row);
+        // добавляет строку row в таблицу table.
+      }
+      tableContainer.innerHTML = "";
+    //   очищает содержимое контейнера таблицы tableContainer.
+      tableContainer.appendChild(table);
+    //   добавляет таблицу table в контейнер таблицы tableContainer.
+    }
+
+    get sum() {
+      const inputs = document.querySelectorAll('input[type="number"]');
+      let sum = 0;
+      const quantityValue = this.quantityScore;
+      for (let input of inputs) {
+        sum += parseInt(input.value);
+      }
+      return sum / quantityValue;
+    }
+  }
+
+  const timesheet = new Timesheet();
+
+  const buttonTable = document.getElementById("get-table");
+  buttonTable.addEventListener("click", function () {
+    timesheet.table();
+  });
+
+  const buttonSum = document.getElementById("get-sum");
+  buttonSum.addEventListener("click", function () {
+    const average = timesheet.sum;
+    const span = document.querySelector('label span');
+    span.textContent = average;
+  });
+</script> -->
+
+
+
+</head>
+<body>
+<div id="table-container"></div>
+<!-- до 5ї задачі ^ -->
+<!-- <div id="inputScoreTab">
+</div> -->
+
+<!-- Задача 7. Подорож складається з 3 етапів. 
+  На кожному етапі користувач може вибрати один з видів транспорту (авто, автобус, літак - випадаючий список),
+   харчування (сніданок, обід, вечеря – checkbоx) та 
+   одного з 3-х гідів(використати  - radio buttons). Ціни визначте самі. Підрахувати загальну вартість.
+ -->
+ <!-- <form>
+  <h3>Етап 1</h3>
+  <label for="transport1">Вид транспорту:</label>
+  <select id="transport1">
+    <option value="Авто">Авто</option>
+    <option value="Літак">Літак</option>
+    <option value="Потяг">Потяг</option>
+  </select><br><br>
+
+  <label>Харчування:</label>
+  <input type="checkbox" name="food1" value="Сніданок">Сніданок
+  <input type="checkbox" name="food1" value="Обід">Обід
+  <input type="checkbox" name="food1" value="Вечеря">Вечеря<br><br>
+
+  <label>Гід:</label>
+  <input type="radio" name="guide1" value="Гід 1">Гід 1
+  <input type="radio" name="guide1" value="Гід 2">Гід 2
+  <input type="radio" name="guide1" value="Гід 3">Гід 3<br><br>
+
+  <h3>Етап 2</h3>
+  <label for="transport2">Вид транспорту:</label>
+  <select id="transport2">
+    <option value="Авто">Авто</option>
+    <option value="Літак">Літак</option>
+    <option value="Потяг">Потяг</option>
+  </select><br><br>
+
+  <label>Харчування:</label>
+  <input type="checkbox" name="food2" value="Сніданок">Сніданок
+  <input type="checkbox" name="food2" value="Обід">Обід
+  <input type="checkbox" name="food2" value="Вечеря">Вечеря
+    
+    
+  <label>Гід:</label>
+  <input type="radio" name="guide2" value="Гід 1">Гід 1
+  <input type="radio" name="guide2" value="Гід 2">Гід 2
+  <input type="radio" name="guide2" value="Гід 3">Гід 3<br><br>
+
+<h3>Етап 3</h3>
+  <label for="transport3">Вид транспорту:</label>
+  <select id="transport3">
+    <option value="Авто">Авто</option>
+    <option value="Літак">Літак</option>
+    <option value="Потяг">Потяг</option>
+  </select><br><br>
+
+  <label>Харчування:</label>
+  <input type="checkbox" name="food3" value="Сніданок">Сніданок
+  <input type="checkbox" name="food3" value="Обід">Обід
+  <input type="checkbox" name="food3" value="Вечеря">Вечеря
+    
+    
+  <label>Гід:</label>
+  <input type="radio" name="guide3" value="Гід 1">Гід 1
+  <input type="radio" name="guide3" value="Гід 2">Гід 2
+  <input type="radio" name="guide3" value="Гід 3">Гід 3<br><br>
+
+
+<button id="calculateBtn">Розрахувати</button>
+    <script>
+
+        
+
+        
+// функція, яка рахує загальну вартість за етап подорожі
+function calculatePrice(transport, food, guide) {
+  let price = 0;
+  
+  // визначаємо вартість транспорту
+  switch (transport) {
+    case "Авто":
+      price += 100;
+      break;
+    case "Літак":
+      price += 500;
+      break;
+    case "Потяг":
+      price += 300;
+      break;
+  }
+  
+  // визначаємо вартість харчування
+  let foodPrice = 0;
+  for (let i = 0; i < food.length; i++) {
+    switch (food[i]) {
+      case "Сніданок":
+        foodPrice += 20;
+        break;
+      case "Обід":
+        foodPrice += 50;
+        break;
+      case "Вечеря":
+        foodPrice += 30;
+        break;
+    }
+  }
+  price += foodPrice;
+  
+  // визначаємо вартість гіда
+  switch (guide) {
+    case "Гід 1":
+      price += 200;
+      break;
+    case "Гід 2":
+      price += 150;
+      break;
+    case "Гід 3":
+      price += 100;
+      break;
+  }
+  
+  return price;
+}
+
+// функція, яка обчислює загальну вартість за всю подорож
+function calculateTotalPrice() {
+  // знаходимо елементи форми
+  let transport1 = document.getElementById("transport1").value;
+  let food1 = document.getElementsByName("food1");
+  let guide1 = document.querySelector('input[name="guide1"]:checked').value;
+  
+  let transport2 = document.getElementById("transport2").value;
+  let food2 = document.getElementsByName("food2");
+  let guide2 = document.querySelector('input[name="guide2"]:checked').value;
+  
+  let transport3 = document.getElementById("transport3").value;
+  let food3 = document.getElementsByName("food3");
+  let guide3 = document.querySelector('input[name="guide3"]:checked').value;
+  
+  // рахуємо загальну вартість за кожен етап
+  let price1 = calculatePrice(transport1, food1, guide1);
+  let price2 = calculatePrice(transport2, food2, guide2);
+  let price3 = calculatePrice(transport3, food3, guide3);
+  
+  // виводимо загальну вартість
+  let totalPrice = price1 + price2 + price3;
+  alert("Загальна вартість подорожі: " + totalPrice + " грн.");
+}
+
+// додаємо обробники подій на кнопку
+let button = document.getElementById("calculateBtn");
+button.addEventListener("click", calculateTotalPrice);
+
+    </script> -->
+</body>
+</html>
+
